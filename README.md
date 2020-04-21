@@ -14,6 +14,8 @@ It supports the follow Minecraft versions:
 
 Some conversions of HD texture packs may takes a while
 
+Shaders or Optifine or are not supported, only Vanilla!
+
 This project is inspired by the no longer continued [PCTexture2PE](https://github.com/rodrigojxd/PCTexture2PE)
 
 It supports to convert blocks, items, entities, paintings, particles, map icons, mob effects and hotbar
@@ -26,12 +28,23 @@ Some experimental conversions are disabled by default, but can be enabled if you
     - Tabs
     - Dialogs
     - Inventory / Recipe book
-    - Tables
+    - Crafting tables
 
 ## Web app
 Look at https://ozelot379.github.io/ConvertJavaTextureToBedrock
 
-Works directly in your browser - no upload and offline
+Works in a current browser.
+
+Tested browsers:
+- Desktop:
+  - Chrome (General Chromium based browsers should work, like Opera, new Edge, ...)
+  - Firefox
+  - Safari
+- Mobile:
+  - iOS (Safari)
+  - Android (Chrome)
+
+Internet Explorer or old Edge are not supported!
 
 ## API
 Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockApi
