@@ -11,7 +11,7 @@ assignees: ''
 A clear and concise description of what the issue is.
 Is there an error message?
 Which step is previous the error message?
-Is the same error/step if you try multiple?
+Is the same error/step or vary it if you try multiple?
 
 **System info**
 System OS: 
