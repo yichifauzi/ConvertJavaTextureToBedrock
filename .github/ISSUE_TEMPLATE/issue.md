@@ -9,6 +9,9 @@ assignees: ''
 
 **Describe the issue**
 A clear and concise description of what the issue is.
+Is there an error message?
+Which step is previous the error message?
+Is the same error/step if you try multiple?
 
 **System info**
 System OS: 
