@@ -36,6 +36,7 @@
     "mini-css-extract-plugin": "^0.8.0",
     "offline-plugin": "^5.0.7",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path-browserify": "^1.0.0",
     "sweetalert": "^2.1.2",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",

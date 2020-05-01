@@ -42,7 +42,17 @@ module.exports = {
     output: {
         filename: "[name].[contenthash].js",
         path: __dirname + "/build",
-        libraryTarget: "umd"
+        libraryTarget: "umd",
+        globalObject: "this" // Fix worker
+    },
+    resolve: {
+        alias: {
+            fs: __dirname + "/src/js/fs_browser_null.js",
+            "fs-extra": __dirname + "/src/js/fs_browser_null.js",
+            "graceful-fs": __dirname + "/src/js/fs_browser_null.js",
+            path: "path-browserify", // Latest version which supports `path.parse`
+            readdirp: __dirname + "/src/js/fs_browser_null.js"
+        }
     },
     plugins: [
         new CleanWebpackPlugin(),
