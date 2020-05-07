@@ -52,6 +52,9 @@ Tested browsers:
 
 Internet Explorer or old Edge are not supported!
 
+## CLI
+Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockCli
+
 ## API
 Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockApi
 
