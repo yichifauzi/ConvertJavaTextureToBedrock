@@ -18,7 +18,7 @@ module.exports = {
     },
     devtool: false,
     entry: {
-        index: "./src/js/index.js"
+        index: "./src/js/index.mjs"
     },
     mode: (isDebug ? "development" : "production"),
     module: {
@@ -28,7 +28,7 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
             },
             {
-                test: /worker\.js$/,
+                test: /worker\.mjs$/,
                 loader: "worker-loader",
                 options: {
                     name: "[name].[contenthash].[ext]"
@@ -47,11 +47,11 @@ module.exports = {
     },
     resolve: {
         alias: {
-            fs: __dirname + "/src/js/fs_browser_null.js",
-            "fs-extra": __dirname + "/src/js/fs_browser_null.js",
-            "graceful-fs": __dirname + "/src/js/fs_browser_null.js",
+            fs: __dirname + "/src/js/fs_browser_null.mjs",
+            "fs-extra": __dirname + "/src/js/fs_browser_null.mjs",
+            "graceful-fs": __dirname + "/src/js/fs_browser_null.mjs",
             path: "path-browserify", // Latest version which supports `path.parse`
-            readdirp: __dirname + "/src/js/fs_browser_null.js"
+            readdirp: __dirname + "/src/js/fs_browser_null.mjs"
         }
     },
     plugins: [
