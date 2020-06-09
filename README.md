@@ -5,6 +5,7 @@ THIS PROJECT IS NO OFFICIAL MINECRAFT PRODUCT - NOT AUTHORIZED OR ASSOCIATED BY 
 # Convert Minecraft Java texture packs to Bedrock texture packs
 
 ## Description
+
 It supports the follow Minecraft versions:
 
 | Minecraft | Version |
@@ -36,10 +37,9 @@ Some experimental conversions are disabled by default, but can be enabled if you
     - Inventory / Recipe book
     - Crafting tables
 
-## Web app
-Look at https://ozelot379.github.io/ConvertJavaTextureToBedrock
+## Requirements
 
-Works in a current browser.
+Works in a current browser
 
 Tested browsers:
 - Desktop:
@@ -52,11 +52,18 @@ Tested browsers:
 
 Internet Explorer or old Edge are not supported!
 
+## Web app
+
+Look at https://ozelot379.github.io/ConvertJavaTextureToBedrock
+
 ## CLI
+
 Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockCli
 
 ## API
+
 Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockApi
 
 ## Report issue
+
 Use github repo issues (https://github.com/ozelot379/ConvertJavaTextureToBedrock/issues/new/choose)
