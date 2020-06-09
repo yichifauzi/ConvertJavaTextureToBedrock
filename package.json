@@ -1,6 +1,5 @@
 {
   "name": "@ozelot379/convert-minecraft-java-texture-to-bedrock-webapp",
-  "type": "module",
   "productName": "ConvertJavaTextureToBedrock",
   "version": "3.4.0",
   "description": "Web app for convert Minecraft Java texture packs to Bedrock texture packs",
@@ -43,6 +42,9 @@
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.10.3",
     "worker-loader": "2.0.0"
+  },
+  "resolutions": {
+    "sharp": "0.25.3"
   },
   "engines": {
     "node": ">=14.0.0"
