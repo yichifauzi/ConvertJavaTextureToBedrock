@@ -6,21 +6,24 @@ import "./../css/style.less";
 
 document.addEventListener("DOMContentLoaded", () => {
     const toastMessage = document.getElementById("toastMessage");
-    OfflinePluginRuntime.install({
-        onInstalled: () => {
-            showToastMessage("Ready for install and use offline", 5000, () => {
 
-            });
-        },
-        onUpdateReady: () => {
-            OfflinePluginRuntime.applyUpdate();
-        },
-        onUpdated: () => {
-            showToastMessage("Update installed - Reloading ...", 2000, () => {
-                location.reload();
-            });
-        }
-    });
+    if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+        OfflinePluginRuntime.install({
+            onInstalled: () => {
+                showToastMessage("Ready for install and use offline", 5000, () => {
+
+                });
+            },
+            onUpdateReady: () => {
+                OfflinePluginRuntime.applyUpdate();
+            },
+            onUpdated: () => {
+                showToastMessage("Update installed - Reloading ...", 2000, () => {
+                    location.reload();
+                });
+            }
+        });
+    }
 
     const selectInputFileButton = document.getElementById("selectInputFileButton");
     selectInputFileButton.addEventListener("change", startConvert);
