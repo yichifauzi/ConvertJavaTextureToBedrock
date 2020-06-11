@@ -2,7 +2,7 @@ THIS PROJECT IS NO OFFICIAL MINECRAFT PRODUCT - NOT AUTHORIZED OR ASSOCIATED BY 
 
 ---
 
-# Convert Minecraft Java texture packs to Bedrock texture packs
+# Web app for convert Minecraft Java texture packs to Bedrock texture packs
 
 ## Description
 
@@ -54,7 +54,19 @@ Internet Explorer or old Edge are not supported!
 
 ## Web app
 
+The latest version is available through Github page
+
 Look at https://ozelot379.github.io/ConvertJavaTextureToBedrock
+
+### Docker
+
+You can also use the web app with Docker like
+
+```bash
+docker run --rm -p 127.0.0.1:8080:80 ozelot379/convert-minecraft-java-texture-to-bedrock-webapp
+```
+
+Look at https://hub.docker.com/r/ozelot379/convert-minecraft-java-texture-to-bedrock-webapp
 
 ## CLI
 
