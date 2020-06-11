@@ -54,7 +54,7 @@ Internet Explorer or old Edge are not supported!
 
 ## Web app
 
-The latest build is available through Github page
+The latest version is available through Github page
 
 Look at https://ozelot379.github.io/ConvertJavaTextureToBedrock
 
