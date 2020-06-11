@@ -10,12 +10,6 @@ const TerserJSPlugin = require("terser-webpack-plugin");
 const isDebug = (process.env.NODE_ENV === "development");
 
 module.exports = {
-    devServer: {
-        disableHostCheck: true,
-        host: "127.0.0.1",
-        open: true,
-        port: 8080
-    },
     devtool: false,
     entry: {
         index: "./src/js/index.js"
