@@ -4,7 +4,7 @@ import {
     ConvertJavaTextureToBedrockApi,
     FileInputEntry,
     FileOutput
-} from "@ozelot379/convert-minecraft-java-texture-to-bedrock";
+} from "@ozelot379/convert-minecraft-java-texture-to-bedrock-api";
 
 addEventListener("message", async (e) => {
     try {
