@@ -7,7 +7,9 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const PACKAGE = require("./package");
 const TerserJSPlugin = require("terser-webpack-plugin");
 
-const isDebug = (process.env.NODE_ENV === "development");
+const {env} = process;
+
+const isDebug = (env.NODE_ENV === "development");
 
 module.exports = {
     devtool: false,
