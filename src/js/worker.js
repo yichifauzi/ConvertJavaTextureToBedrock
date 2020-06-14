@@ -1,7 +1,7 @@
 import {
     AbstractLog,
     ArrayInput,
-    ConvertJavaTextureToBedrock,
+    ConvertJavaTextureToBedrockApi,
     FileInputEntry,
     FileOutput
 } from "@ozelot379/convert-minecraft-java-texture-to-bedrock";
@@ -11,7 +11,7 @@ addEventListener("message", async (e) => {
         const {files, options} = e.data;
 
         const output = {
-            output: await new ConvertJavaTextureToBedrock(
+            output: await new ConvertJavaTextureToBedrockApi(
                 new ArrayInput(Array.prototype.map.call(files, file => new FileInputEntry(file))),
                 new FileOutput(),
                 new class extends AbstractLog {
