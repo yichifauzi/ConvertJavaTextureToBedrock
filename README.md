@@ -56,7 +56,7 @@ Internet Explorer or old Edge are not supported!
 
 The latest version is available through Github page
 
-Look at https://ozelot379.github.io/ConvertJavaTextureToBedrockWebApp
+Look at https://ozelot379.github.io/ConvertJavaTextureToBedrock
 
 ### Docker
 
@@ -79,4 +79,4 @@ Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockApi
 
 ## Report issue
 
-Use github repo issues (https://github.com/ozelot379/ConvertJavaTextureToBedrockWebApp/issues/new/choose)
+Use github repo issues (https://github.com/ozelot379/ConvertJavaTextureToBedrock/issues/new/choose)
