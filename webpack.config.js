@@ -14,7 +14,7 @@ const isDebug = (env.NODE_ENV === "development");
 module.exports = {
     devtool: false,
     entry: {
-        index: "./src/js/index.js"
+        index: "./src/js/index.mjs"
     },
     mode: (isDebug ? "development" : "production"),
     module: {
@@ -27,7 +27,7 @@ module.exports = {
                 test: /worker\.js$/,
                 loader: "worker-loader",
                 options: {
-                    name: "[name].[contenthash].[ext]"
+                    name: "[name].[contenthash].js"
                 }
             }
         ]
