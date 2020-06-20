@@ -43,11 +43,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            fs: __dirname + "/src/js/fs_browser_null.js",
-            "fs-extra": __dirname + "/src/js/fs_browser_null.js",
-            "graceful-fs": __dirname + "/src/js/fs_browser_null.js",
-            path: "path-browserify", // Latest version which supports `path.parse`
-            readdirp: __dirname + "/src/js/fs_browser_null.js"
+            fs: __dirname + "/src/js/browserify/fs",
+            path: __dirname + "/src/js/browserify/path"
         }
     },
     plugins: [
