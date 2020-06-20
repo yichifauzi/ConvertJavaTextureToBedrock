@@ -7,12 +7,14 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const PACKAGE = require("./package");
 const TerserJSPlugin = require("terser-webpack-plugin");
 
-const isDebug = (process.env.NODE_ENV === "development");
+const {env} = process;
+
+const isDebug = (env.NODE_ENV === "development");
 
 module.exports = {
     devtool: false,
     entry: {
-        index: "./src/js/index.js"
+        index: "./src/js/index.mjs"
     },
     mode: (isDebug ? "development" : "production"),
     module: {
@@ -25,7 +27,7 @@ module.exports = {
                 test: /worker\.js$/,
                 loader: "worker-loader",
                 options: {
-                    name: "[name].[contenthash].[ext]"
+                    name: "[name].[contenthash].js"
                 }
             }
         ]
@@ -41,11 +43,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            fs: __dirname + "/src/js/fs_browser_null.js",
-            "fs-extra": __dirname + "/src/js/fs_browser_null.js",
-            "graceful-fs": __dirname + "/src/js/fs_browser_null.js",
-            path: "path-browserify", // Latest version which supports `path.parse`
-            readdirp: __dirname + "/src/js/fs_browser_null.js"
+            fs: __dirname + "/src/js/browserify/fs",
+            path: __dirname + "/src/js/browserify/path"
         }
     },
     plugins: [
