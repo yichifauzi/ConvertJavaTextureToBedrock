@@ -10,8 +10,8 @@ It supports the follow Minecraft versions:
 
 | Minecraft | Version |
 |-----------|---------|
-| Java | v1.13.x, v1.14.x or v1.15.x |
-| Bedrock | v1.14.x |
+| Java | v1.13.x, v1.14.x, v1.15.x or v1.16.x |
+| Bedrock | v1.16.x |
 
 This project is inspired by the no longer continued [PCTexture2PE](https://github.com/rodrigojxd/PCTexture2PE)
 
@@ -21,7 +21,7 @@ Some conversions of HD texture packs may takes a while
 
 You need a device with corresponding enough RAM (like the file size and content of the texture pack), because the convert it is not stored in a temporary storage, but in the RAM memory
 
-Shaders or OptiFine or 3d textures or mods or datapacks are not supported, only classic Vanilla textures
+Shaders or OptiFine or 3d textures or mods or datapacks or fonts are not supported, only classic Vanilla textures
 
 Snapshots versions may are also not supported
 

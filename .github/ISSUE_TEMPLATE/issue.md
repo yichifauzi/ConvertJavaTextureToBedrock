@@ -18,6 +18,8 @@ Which step is previous the error message?
 
 Is it the same error/step or is different if you try multiple times?
 
+Are the textures available/correct on Java version?
+
 **System info**
 
 ***Converting***
