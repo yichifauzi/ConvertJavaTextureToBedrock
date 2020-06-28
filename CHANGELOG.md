@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.1]
+- Fix root folder in sub folder in some wrong texture packs
+
 ## [3.6.0]
 - Convert new v1.16 textures
 - Convert wither armor texture
