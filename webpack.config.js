@@ -44,6 +44,7 @@ module.exports = {
     resolve: {
         alias: {
             fs: __dirname + "/src/js/browserify/fs",
+            jszip: __dirname + "/node_modules/jszip/lib/index.js",
             path: __dirname + "/src/js/browserify/path"
         }
     },
