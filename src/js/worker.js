@@ -1,12 +1,7 @@
-import {
-    AbstractLog,
-    ArrayInput,
-    ConvertJavaTextureToBedrockApi,
-    FileInputEntry,
-    FileOutput
-} from "@ozelot379/convert-minecraft-java-texture-to-bedrock-api";
+import {AbstractLog, ArrayInput, FileInputEntry, FileOutput} from "@ozelot379/convert-base-api";
+import {ConvertJavaTextureToBedrockApi} from "@ozelot379/convert-minecraft-java-texture-to-bedrock-api";
 
-addEventListener("message", async (e) => {
+addEventListener("message", async e => {
     try {
         const {files, options} = e.data;
 
