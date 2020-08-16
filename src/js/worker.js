@@ -12,16 +12,20 @@ addEventListener("message", async e => {
                 new class extends AbstractLog {
                     /**
                      * @inheritDoc
+                     *
+                     * @param {string|undefined} log_color_class
                      */
-                    log(log) {
-                        postMessage({log})
+                    log(log, log_color_class = undefined) {
+                        postMessage({log, log_color_class})
                     }
 
                     /**
                      * @inheritDoc
                      */
                     warn(log) {
-                        this.log(`WARNING: ${log}`);
+                        this.warnCount();
+
+                        this.log(`WARNING: ${log}`, "yellow");
                     }
                 }(),
                 options

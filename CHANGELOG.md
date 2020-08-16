@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.0.3]
+- Log warn logs occurred count
+- Mark warning logs yellow
+
 ## [4.0.2]
 - Fix `pack_format` `6`
 - Remove convert piglin

@@ -163,10 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
      * @returns {Promise<>}
      */
     async function afterConvert(e) {
-        const {log, output} = e.data;
+        const {log, log_color_class, output} = e.data;
 
         if (log) {
-            _log(log);
+            _log(log, log_color_class);
             return;
         }
 
@@ -210,12 +210,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /**
      * @param {string|undefined} log
+     * @param {string|undefined} log_color_class
      */
-    function _log(log = undefined) {
+    function _log(log = undefined, log_color_class = undefined) {
         if (log) {
             const li = document.createElement("li");
 
             li.innerText = log;
+
+            if (log_color_class) {
+                li.classList.add(`${log_color_class}-text`, "text-darken-3");
+            }
 
             logs.appendChild(li);
         }
