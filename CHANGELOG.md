@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.0.5]
+- Set alpha to `2` in `OverlayToTranslateConverter`
+- Mark errors logs red
+
 ## [4.0.3]
 - Log warn logs occurred count
 - Mark warning logs yellow
