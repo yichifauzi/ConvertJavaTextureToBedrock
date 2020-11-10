@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: "error"
         });
 
-        _log(`ERROR: ${err.message}`, "error");
+        _log(`ERROR: ${err.message}`, "red");
     }
 
     /**

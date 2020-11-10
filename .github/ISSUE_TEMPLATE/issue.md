@@ -30,5 +30,4 @@ Browser:
 System OS: 
 
 **Texture pack**
-(optimal, but on advantage, so that issues can be analyzed and fixed more precisely)
 Link to download: 
