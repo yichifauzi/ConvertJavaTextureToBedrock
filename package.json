@@ -2,7 +2,7 @@
   "name": "@ozelot379/convert-minecraft-java-texture-to-bedrock-webapp",
   "productName": "ConvertJavaTextureToBedrockWebApp",
   "version": "4.1.0",
-  "description": "Web app for convert Minecraft Java texture packs to Bedrock texture packs",
+  "description": "Web app for converting Minecraft Java texture packs to Bedrock texture packs",
   "keywords": [
     "Minecraft",
     "Texture",
