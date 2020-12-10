@@ -81,7 +81,3 @@ Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockCli
 ## API
 
 Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockApi
-
-## Report issue
-
-Use github repo issues (https://github.com/ozelot379/ConvertJavaTextureToBedrock/issues/new/choose)
