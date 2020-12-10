@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Describe the issue**
-Please consult the readme before you report an issue
+Please consult the readme and other issues before you report an issue
 
 A clear and concise description of what the issue is.
 

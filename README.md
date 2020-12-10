@@ -1,8 +1,8 @@
-THIS PROJECT IS NO OFFICIAL MINECRAFT PRODUCT - NOT AUTHORIZED OR ASSOCIATED BY MOJANG
+NOT OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG
 
 ---
 
-# Web app for convert Minecraft Java texture packs to Bedrock texture packs
+# Web app for converting Minecraft Java texture packs to Bedrock texture packs
 
 ## Description
 
@@ -20,8 +20,9 @@ It supports to convert blocks, items, entities, paintings, particles, map icons,
 Please note:
 
 - No guarantee it will work
-- Please notice your browser is be supported
 - Each texture pack could be different and may not work or only partially
+- Please notice your browser is be supported
+- Works directly in your browser - no upload required and offline usage
 - Some conversions of HD texture packs may takes a while
 - You need a device with corresponding enough RAM (like the file size and content of the texture pack), because the convert it is not stored in a temporary storage, but in the RAM memory
 - Shaders or OptiFine or 3d textures or mods or datapacks or custom models or fonts are not supported, only classic Vanilla textures
@@ -32,12 +33,14 @@ Please note:
 - Please don't report Java or Bedrock version changes
 
 Some experimental conversions are disabled by default, but can be enabled if you want to try, but please be warned, it contains many bugs and may are not beautiful and may not usable:
+- Horses
 - UI
     - Buttons
     - Tabs
     - Dialogs
     - Inventory / Recipe book
     - Crafting tables
+- Weather (Rain/Snow)
 
 ## Requirements
 
@@ -78,7 +81,3 @@ Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockCli
 ## API
 
 Look at https://github.com/ozelot379/ConvertJavaTextureToBedrockApi
-
-## Report issue
-
-Use github repo issues (https://github.com/ozelot379/ConvertJavaTextureToBedrock/issues/new/choose)

@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.2.0]
+- Weather converter are now experimental
+- Log current `pack_format` if incompatible
+
 ## [4.1.0]
 - Bedrock manifest format version 2
 - Convert java mcmeta description array
