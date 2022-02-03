@@ -22,13 +22,18 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
             },
             {
-                test: /worker\.js$/,
-                loader: "worker-loader",
-                options: {
-                    name: "[name].[contenthash].js"
-                }
-            }
-        ]
+    test: /\.worker\.js$/,
+    use: { 
+      loader: 'worker-loader',
+      options: {
+          //name: "[name].[contenthash].js"
+          name: "[name].js
+          inline: true, 
+          fallback: false,
+        }
+    },
+  }
+ ]
     },
     optimization: {
         minimizer: (isDebug ? [] : [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin()]),
