@@ -23,7 +23,7 @@
   "homepage": "https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock#readme",
   "dependencies": {},
   "devDependencies": {
-    "@modifiedcommand/convert-minecraft-java-texture-to-bedrock-api": "github:ModifiedCommand/ConvertJavaTextureToBedrockApi#v4.0.6",
+    "@modifiedcommand/convert-minecraft-java-texture-to-bedrock-api": "github:ModifiedCommand/ConvertJavaTextureToBedrockApi#v4.0.7",
     "clean-webpack-plugin": "3.0.0",
     "css-loader": "3.4.2",
     "favicons-webpack-plugin": "1.0.2",
