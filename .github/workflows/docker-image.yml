@@ -13,6 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
+        echo ls
         rm -rf $(ls -a -I '.' -I '..' -I '.git')
         docker build . --file Dockerfile
         cp -r htdocs/* .
