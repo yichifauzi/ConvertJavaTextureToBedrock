@@ -14,8 +14,7 @@ jobs:
     
     - name: Build the Docker image
       run: |
-        rm -rf $(ls -a -I '.' -I '..' -I '.git')
-        docker build --file Dockerfile
+        docker build . --file Dockerfile
         cp -r htdocs/* .
         rm -rf htdocs
       
