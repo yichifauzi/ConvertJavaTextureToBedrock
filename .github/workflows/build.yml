@@ -1,0 +1,36 @@
+name: gh-build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Build
+      run: |
+        yarn install
+        node_modules/.bin/webpack --config webpack.config.js
+        cp -r build /build
+        rm -rf /src
+      
+    - name: Sigin to git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+      
+    - name: Commit
+      run: |
+        git add .
+        git commit -m "GitHub Actions"
+      
+    - name: Push commit
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: "gh-pages"
