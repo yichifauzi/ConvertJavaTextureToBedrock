@@ -48,7 +48,7 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "node_modules/.bin/webpack --config webpack.config.js"
   },
-  "private": true
+  "private": false
 }
