@@ -11,9 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    
+    - name: test
+      run: ls
+    
     - name: Build the Docker image
       run: |
-        echo ls
         rm -rf $(ls -a -I '.' -I '..' -I '.git')
         docker build . --file Dockerfile
         cp -r htdocs/* .
