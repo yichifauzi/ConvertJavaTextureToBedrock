@@ -1,7 +1,7 @@
 import fileSaver from "file-saver";
 import OfflinePluginRuntime from "offline-plugin/runtime";
 import swal from "sweetalert";
-import { Worker } from "./worker.js";
+import Worker from "./worker.js";
 import "./../css/style.less";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * @returns {Promise<>}
      */
     async function afterConvert(e) {
-        const {log, log_color_class, output} = e.data;
+        const { log, log_color_class, output } = e.data;
 
         if (log) {
             _log(log, log_color_class);

@@ -1,4 +1,4 @@
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -7,36 +7,31 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const PACKAGE = require("./package");
 const TerserJSPlugin = require("terser-webpack-plugin");
 
-const isDebug = (process.env.NODE_ENV === "development");
+//const isDebug = (process.env.NODE_ENV === "development");
+const isDebug = "production";
 
 module.exports = {
-    stats: {
-     entrypoints: false,
-     children: false
-    },
     devtool: false,
+    stats: {
+        children: false
+    },
     entry: {
         index: "./src/js/index.mjs"
     },
     mode: (isDebug ? "development" : "production"),
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.less$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
             },
             {
-    test: /\.worker\.js$/,
-    use: { 
-      loader: 'worker-loader',
-      options: {
-          name: "[name].[contenthash].js",
-          inline: true, 
-          fallback: false,
-        }
-    },
-  }
- ]
+                test: /worker\.js$/,
+                loader: "worker-loader",
+                options: {
+                    name: "[name].[contenthash].js"
+                }
+            }
+        ]
     },
     optimization: {
         minimizer: (isDebug ? [] : [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin()]),

@@ -15,22 +15,10 @@ jobs:
     - name: Build
       run: |
         yarn install
-        node_modules/.bin/webpack --config webpack.config.js
-        cp -r build /build
-        rm -rf /src
-      
-    - name: Sigin to git
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-      
-    - name: Commit
-      run: |
-        git add .
-        git commit -m "GitHub Actions"
-      
-    - name: Push commit
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: "gh-pages"
+        yarn build
+
+    - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
