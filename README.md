@@ -72,4 +72,4 @@ docker run --rm -p 127.0.0.1:8080:80 ozelot379/convert-minecraft-java-texture-to
 Look at https://hub.docker.com/r/ozelot379/convert-minecraft-java-texture-to-bedrock-webapp
 
 ## API
-* Look at (ModifiedCommand/ConvertJavaTextureToBedrockApi)[https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi]
+* Look at [ModifiedCommand/ConvertJavaTextureToBedrockApi](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi)
