@@ -1,5 +1,20 @@
 # Changelog
 
+## [[v4.3.0]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.0) - Lastest Commit - Feb 4, 2022
+- Reformated some files
+- Fix all the packages with [API](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi) version [`v4.0.8`](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi/releases/tag/v4.0.8)
+- Automated builds for `gh-pages` with [GitHub Actions](https://github.com/features/actions)
+- Updated Readme and Source Footer Links
+- Made mobile have a shorter name than desktop
+- Created `src/js/images.js` for images for webpack
+- Customized Stylesheet
+  - Added Header Image
+  - Added Margin around Drag and Drop Zone
+  - Colored Drag and Drop Zone
+  - Made Experimental conversions Label and Switch Green
+  - Added Bootstrap
+    - Make three columns for better mobile support
+
 ## [[v4.2.0]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.2.0) - [a1c27d8](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/commit/a1c27d888058f61bbb3e67170b5f9cb66e3b53a8) - Dec 10, 2020
 - Weather converter are now experimental
 - Log current `pack_format` if incompatible

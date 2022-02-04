@@ -1,0 +1,1 @@
+import headerImage from './../img/header.jpg';

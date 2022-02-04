@@ -3,6 +3,7 @@ import OfflinePluginRuntime from "offline-plugin/runtime";
 import swal from "sweetalert";
 import Worker from "./worker.js";
 import "./../css/style.less";
+import Images from "./images.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const toastMessage = document.getElementById("toastMessage");

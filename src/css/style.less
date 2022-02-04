@@ -1,6 +1,7 @@
 @import (less) "~materialize-css/dist/css/materialize.min.css";
 
-html, body {
+html,
+body {
   .white;
   .black-text;
   display: flex;
@@ -51,8 +52,8 @@ footer {
     label {
       .yellow-text;
 
-      input[type=checkbox]:checked + .lever,
-      input[type=checkbox]:checked + .lever:after {
+      input[type="checkbox"]:checked + .lever,
+      input[type="checkbox"]:checked + .lever:after {
         .yellow;
       }
 
@@ -83,7 +84,8 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  html, body {
+  html,
+  body {
     .grey.darken-4;
     .white-text;
   }
@@ -118,4 +120,49 @@ footer {
   .btn.disabled {
     .grey.darken-3;
   }
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.dekstopOnly {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobileOnly {
+    display: block;
+  }
+  .dekstopOnly {
+    display: none;
+  }
+}
+
+main {
+  background: #c78a73 !important;
+  margin: 25px;
+}
+
+body {
+  background-color: #795548 !important;
+}
+
+nav .nav-title {
+  margin: 0px 28px;
+}
+
+nav.nav-extended {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./../img/header.jpg");
+  background-position: center;
+}
+
+footer .switch label {
+  color: #4caf50 !important;
+}
+
+footer .switch label input[type="checkbox"]:checked + .lever,
+footer .switch label input[type="checkbox"]:checked + .lever:after {
+  background: #4caf50 !important;
 }

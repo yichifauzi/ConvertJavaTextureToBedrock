@@ -30,7 +30,13 @@ module.exports = {
                 options: {
                     name: "[name].[contenthash].js"
                 }
-            }
+            }, {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
+            },
         ]
     },
     optimization: {
