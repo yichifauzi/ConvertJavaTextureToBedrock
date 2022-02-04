@@ -1,7 +1,7 @@
 import fileSaver from "file-saver";
 import OfflinePluginRuntime from "offline-plugin/runtime";
 import swal from "sweetalert";
-import Worker from "./worker.js";
+import { Worker } from "./worker.js";
 import "./../css/style.less";
 
 document.addEventListener("DOMContentLoaded", () => {
