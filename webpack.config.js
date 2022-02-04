@@ -26,8 +26,7 @@ module.exports = {
     use: { 
       loader: 'worker-loader',
       options: {
-          //name: "[name].[contenthash].js"
-          name: "[name].js",
+          name: "[name].[contenthash].js",
           inline: true, 
           fallback: false,
         }
