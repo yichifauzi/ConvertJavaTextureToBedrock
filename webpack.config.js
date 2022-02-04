@@ -10,6 +10,10 @@ const TerserJSPlugin = require("terser-webpack-plugin");
 const isDebug = (process.env.NODE_ENV === "development");
 
 module.exports = {
+    stats: {
+     entrypoints: false,
+     children: false
+    },
     devtool: false,
     entry: {
         index: "./src/js/index.mjs"
