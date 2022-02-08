@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Conversion was successful",
             content: logs,
             icon: "success",
+            //buttons: ["zip", "mcpack"]
             buttons: "Save"
         });
 
