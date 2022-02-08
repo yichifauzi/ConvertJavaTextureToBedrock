@@ -1,7 +1,0 @@
-.*
-build
-Dockerfile
-node_modules
-old
-vendor
-*-lock.json

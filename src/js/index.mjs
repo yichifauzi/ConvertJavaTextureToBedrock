@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         selectInputFileButton.value = selectInputFolderButton.value = "";
 
         const savePopup = swal({
-            title: "Conversion was successfully",
+            title: "Conversion was successful",
             content: logs,
             icon: "success",
             buttons: "Save"
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
         selectInputFileButton.value = selectInputFolderButton.value = "";
 
         swal({
-            title: "Conversion was failed",
+            title: "Conversion failed",
             content: logs,
             icon: "error"
         });

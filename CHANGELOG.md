@@ -1,6 +1,12 @@
 # Changelog
 
-## [[v4.3.0]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.0) - Lastest Commit - Feb 4, 2022
+## [[v4.3.1]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.1) - Lastest Commit - Feb 8, 2022
+- Made my own fork of [convert-base-api](https://github.com/ModifiedCommand/convert-base-api) to fix the rename zip error in [issue 1](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/issues/1).
+- Remove docker information
+- Remove `update_gh-pages.sh`
+- Fix Conversion Grammar
+
+## [[v4.3.0]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.0) - [54d1960](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/commit/54d19602a8d98f7b2fec61361404b4550e276abb) - Feb 4, 2022
 - Reformated some files
 - Fix all the packages with [API](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi) version [`v4.0.8`](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi/releases/tag/v4.0.8)
 - Automated builds for `gh-pages` with [GitHub Actions](https://github.com/features/actions)

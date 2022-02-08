@@ -1,4 +1,4 @@
-import { AbstractLog, ArrayInput, FileInputEntry, FileOutput } from "@geekcornernpm/convert-base-api";
+import { AbstractLog, ArrayInput, FileInputEntry, FileOutput } from "@modifiedcommand/convert-base-api";
 import { ConvertJavaTextureToBedrockApi } from "@modifiedcommand/convert-minecraft-java-texture-to-bedrock-api";
 
 addEventListener("message", async e => {
