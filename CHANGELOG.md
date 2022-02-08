@@ -1,6 +1,11 @@
 # Changelog
 
-## [[v4.3.1]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.1) - Lastest Commit - Feb 8, 2022
+## [[v4.3.2]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.2) - Lastest Commit - Feb 8, 2022
+- Convert Base API version updated to [`v1.0.10`](https://github.com/ModifiedCommand/convert-base-api/releases/tag/v1.0.10)
+- Convert Java Texture To Bedrock API updated to [`v4.1.5`](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi/releases/tag/v4.1.5)
+- Fixed files and folder not converting at all.
+
+## [[v4.3.1]](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/releases/tag/v4.3.1) - [1e81e53](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/commit/1e81e53b6efd3a233e1a35dd874dc07dff28a3c4) - Feb 8, 2022
 - Made my own fork of [convert-base-api](https://github.com/ModifiedCommand/convert-base-api) to fix the rename zip error in [issue 1](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrock/issues/1).
 - Remove docker information
 - Remove `update_gh-pages.sh`
