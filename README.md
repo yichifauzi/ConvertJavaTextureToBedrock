@@ -58,7 +58,7 @@ Tested browsers:
 Internet Explorer or old Edge are not supported!
 
 ## Web app
-* The latest version is available through [GitHub pages](http://modifiedcommand.github.io/ConvertJavaTextureToBedrock/)
+* The latest version is available through [GitHub pages](http://yichifauzi.github.io/ConvertJavaTextureToBedrock/)
 
 ## API
-* Look at [ModifiedCommand/ConvertJavaTextureToBedrockApi](https://github.com/ModifiedCommand/ConvertJavaTextureToBedrockApi)
+* Look at [yichifauzi/ConvertJavaTextureToBedrockApi](https://github.com/yichifauzi/ConvertJavaTextureToBedrockApi)
